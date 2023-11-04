@@ -1,0 +1,139 @@
+/*
+  ** 共通設定
+    各項目：任意指定
+    margin, padding : 0
+    line-height, letter-spacing, font-size, font-family : 設定上のデフォルト
+    color: 黒
+    box-sizing: margin, padding, borderの値を含む
+    word-break, word-wrap : テキストは折り返し
+    text-align : 両断揃え
+    font-feature-settings : 文字詰め有効
+    text-rendering : 読みやすさ優先
+    webkit互換 : フォント整い有効、他はなし
+    デバイス依存 : なし
+  */
+
+*
+  margin: 0
+  padding: 0
+  color: $black
+  box-sizing: border-box
+  word-break: break-word
+  word-wrap: break-word
+  text-align: start
+  font-feature-settings: palt
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+body
+  //line-height: $line_height_default
+  letter-spacing: $letter_space_default
+  @include pc_view
+    font-size: $font_size_default_pc
+  @include sp_view
+    font-size: $font_size_default_sp
+  font-family: $base_font_family
+
+a
+  text-decoration: none
+
+ul
+  li
+    list-style: none
+
+hr
+  clear: both
+  -moz-box-sizing: content-box
+  box-sizing: content-box
+  height: 0
+  margin: 16px 0
+  border: 0
+  border-top: 1px solid transparent
+
+label
+  display: block
+
+form
+  input,
+  select,
+  textarea
+    box-sizing: border-box
+    margin: 0
+    border: none
+    border-radius: 0
+    font: inherit
+    color: inherit
+  textarea
+    overflow: auto
+    vertical-align: top
+    &:disabled
+      background-color: $light-gray
+      color: $gray
+  input
+    &:not([type]),
+    &[type="url"],
+    &[type="tel"],
+    &[type="text"],
+    &[type="email"],
+    &[type="search"],
+    &[type="number"],
+    &[type="password"],
+    &[type="datetime"],
+    &[type="datetime-local"],
+    &[type="date"],
+    &[type="month"],
+    &[type="time"],
+    &[type="week"],
+    &[type="color"]
+      &:disabled
+        background-color: $light-gray
+        color: $gray
+    &[type="checkbox"],
+    &[type="radio"]
+      padding: 0
+      &:not(:disabled)
+        cursor: pointer
+    &:not([type="radio"]):not([type="checkbox"])
+      vertical-align: middle
+  select
+    text-transform: none
+    vertical-align: middle
+    &:disabled
+      border-color: $light-gray
+      background-color: $light-gray
+      color: $gray
+    &::-ms-expand
+      display: none
+  optgroup
+    font: inherit
+    font-weight: bold
+  fieldset
+    border: none
+    margin: 0
+    padding: 0
+  legend
+    width: 100%
+    border: 0
+    padding: 0
+    padding-bottom: 15px
+    font-size: 20px
+    line-height: 34px
+    &:after
+      content: ""
+      display: block
+      border-bottom: 1px solid $light-gray
+  & ::-ms-input-placeholder,
+  & ::-webkit-input-placeholder,
+  & ::-moz-placeholder
+    opacity: 1
+    color: $black
+    &:disabled
+      color: $gray
+  & :invalid
+    box-shadow: none
+  & >
+  & :last-child
+    margin-bottom: 0

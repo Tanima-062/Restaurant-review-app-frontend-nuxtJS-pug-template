@@ -1,0 +1,115 @@
+/*
+  ** 外部ファイルの実装
+  */
+
+$sub_color: #1c5db5
+$accent_color: #ffc11c
+$main_color: #1ba1ff
+
+// element-ui
+// *指定のpadding: 0によりエレメントのスタイルが潰れる問題を解消
+.el-select-dropdown
+  .el-scrollbar
+    .el-select-dropdown__wrap
+      .el-scrollbar__view
+        .el-select-dropdown__item
+          padding: 0 20px
+
+.el-checkbox :deep()
+  padding: 8px 0
+  width: 100%
+  .el-checkbox__input
+    .el-checkbox__inner
+      width: 18px
+      height: 18px
+      border: 2px solid $gray
+    .el-checkbox__inner:after
+      height: 8px
+      left: 5px
+  .el-checkbox__input.is-checked
+    .el-checkbox__inner
+      background-color: $sub_color
+      border-color: $sub_color
+  .el-checkbox__input
+    .el-checkbox__inner:hover
+      border-color: $sub_color
+  .el-checkbox__label
+    color: $dark_gray
+    font-size: $font_size_default_pc
+    margin-left: 8px
+.el-checkbox.is-checked :deep()
+  .el-checkbox__label
+    color: $sub_color
+    font-weight: 600
+
+.el-select :deep()
+  .el-input
+    .el-input__inner
+      height: 50px
+      border: 1px solid $dark_gray
+      font-size: $font_size_default_pc
+      padding-left: 8px
+      border-radius: 3px
+      color: $black
+      &::placeholder
+        color: $gray
+      &::-ms-input-placeholder
+        color: $gray
+      &::-ms-input-placeholder
+        color: $gray
+      &.is-disabled
+        .el-input__inner
+          color: $dark_gray
+          background: $gray
+          border-color: $gray
+.el-select.disabled :deep()
+  .el-input__inner
+    background-color: $warning_color
+    border-color: $error_color
+
+.string-input
+  -webkit-appearance: none
+  background-image: none
+  border-radius: 3px
+  border: 1px solid $dark_gray
+  box-sizing: border-box
+  color: $black
+  display: inline-block
+  font-size: $font_size_default_pc
+  height: 52px
+  line-height: 52px
+  outline: 0
+  padding: 0 8px
+  -webkit-transition: border-color .2s cubic-bezier(.645,.045,.355,1)
+  transition: border-color .2s cubic-bezier(.645,.045,.355,1)
+  width: 100%
+.string-input:focus
+  border-color: $main_color
+
+.string-input::placeholder
+  color: $gray
+
+/* IE */
+.string-input:-ms-input-placeholder
+  color: $gray
+
+/* Edge */
+.string-input::-ms-input-placeholder
+  color: $gray
+
+.el-textarea__inner
+  padding: 8px
+  border: 1px solid $dark-gray
+  border-radius: 3px
+  font-size: $font_size_default_pc
+  color: $black
+  &::placeholder
+    color: $dark-gray
+
+.el-collapse
+  .el-collapse-item
+    .el-collapse-item__header
+      .el-collapse-item__arrow
+        transform: rotate(90deg)
+        &.is-active
+          transform: rotate(-90deg)

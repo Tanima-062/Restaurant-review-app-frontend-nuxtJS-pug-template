@@ -1,0 +1,133 @@
+/*
+  ** デザインガイドの実装
+  */
+
+/*
+  ** 文字
+    各項目：指定
+    大見出し : 32px
+    中見出し : 24px
+    小見出し : 20px
+    PCでの本文文字の大きさ : 16px
+    SPでの本文文字の大きさ : 14px
+    コメント、注意書き : 12px
+    行間（指定なし） : normal
+    行間（本文基本） : 32px
+    行間（大きめ） : 24px
+    行間（小さめ） : 16px
+    字間（指定なし） : 0
+    字間（本文基本） : 1px
+    字間（凝縮） : 0.8px
+    字間（拡張） : 1.4px
+    フォントファミリー（ゴシック） : "BlinkMacSystemFont", "-apple-system", "Roboto", "Droid Sans", "Arial", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", sans-serif
+    フォントファミリー（明朝） : "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif
+  */
+
+$font_size_huge: 32px
+$font_size_big: 24px
+$font_size_large: 20px
+$font_size_medium: 16px
+$font_size_small: 14px
+$font_size_tiny: 12px
+$font_size_default_pc: 16px
+$font_size_default_sp: 14px
+$line_height_none: normal
+$line_height_high: 32px
+$line_height_default: 24px
+$line_height_low: 16px
+$letter_space_none: 0
+$letter_space_default: 1px
+$letter_space_condensed: 0.8px
+$letter_space_expanded: 1.4px
+$base_font_family: "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo",sans-serif
+
+/*
+  ** 画面サイズ
+    PCでの最大大きさ : 1024px
+    SPでの最大大きさ : 767px
+
+    PCでの最小大きさ : 768px
+    SPでの最小大きさ : 320px
+  */
+
+$container_max_width_pc: 1024px
+$container_max_width_sp: 767px
+
+$container_min_width_pc: 768px
+$container_min_width_sp: 320px
+
+/*
+  ** カラー
+    各項目：指定
+    $main_color: #1ba1ff　メインカラー/ Header/ セカンダリーアクションボタン：会員登録など予約動線とは違う動線$main_color: #1ba1ff
+    $main_color_hover: #1b94e9 セカンダリーアクションボタンの:hover, :active
+    $accent_color: #ffc11c　プライマリーアクションボタン：予約動線につながるもの
+    $accent_color_hover: #e8b01b プライマリーアクションボタンの:hover, :active
+    $sub_color: #1c5db5　アクセントカラー/ 弱い注意喚起
+    $accent_sub_color: #0d8116　成功時のテキスト文字 / 煽り文言、こちらからの訴求を意味するもの
+    $error_color: #ff1d1c　警告、バリデーション
+    $success_color: #ddebd7　成功時の背景 / 煽り文言、こちらからの訴求を意味す
+    $notice_color: #ddf1ff　弱い注意喚起（背景色）
+    $warning_color: #fff4f4　警告、バリデーション（背景色）
+    $white: #fff
+    $black: #222　黒の基本色。文字の色など基本的な黒はこれを使用する
+    $dark_gray: #a6a6a6
+    $spare_gray: #4d4d4d　予備グレイ。どうしても必要な場合に使用する
+    $gray: #e4e4e4
+    $light_gray: #f4f4f4
+    $link_color: #0896ff　リンクカラー※リンクには基本的に下線をつけること
+    $fb_color: #29579d
+    $tw_color: #33a7e0
+    $ya_color: #ff1d1c
+    $go_color: #dd5036
+    $deep_black: #000000
+  */
+
+$main_color: #1ba1ff
+$main_color_hover: #1b94e9
+$accent_color: #ffc11c
+$accent_color_hover: #e8b01b
+$sub_color: #1c5db5
+$accent_sub_color: #0d8116
+$error_color: #ff1d1c
+$success_color: #ddebd7
+$notice_color: #ddf1ff
+$warning_color: #fff4f4
+$white: #fff
+$black: #222
+$deep_black: #000000
+$dark_gray: #a6a6a6
+$spare_gray: #4d4d4d
+$gray: #e4e4e4
+$light_gray: #f4f4f4
+$link_color: #0896ff
+$fb_color: #29579d
+$tw_color: #33a7e0
+$ya_color: #ff1d1c
+$go_color: #dd5036
+
+/*
+  ** 方向
+    各項目：任意指定
+    代表性を持つので、複数名詞で書く
+    padding, margin, border : $directions
+    float : $float_directions
+    font-size : $font_sizes
+    text-align : $horizon_alignments
+    vertical-align: $vertical_alignments
+    line_height : $line_heights
+    letter_space : $letter_spaces
+    inline要素(color) : $colors
+    block要素(div, section, button) : $states
+  */
+
+$directions: top, bottom, left, right
+$float_directions: none, left, right
+$font_sizes: huge, big, large, default_pc, default_sp, small
+$font_weights: normal, bold
+$horizon_alignments: left, right, center, justify
+$vertical_alignments: top, bottom, baseline, middle
+$line_heights: none, high, default, low
+$letter_spaces: none, default, condensed, expanded
+$amounts: 0, 4, 8, 12, 16, 24
+$states: error, success, warning, notice

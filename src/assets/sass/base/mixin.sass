@@ -1,0 +1,38 @@
+/*
+  ** mediaQuery
+    ブレークポイントは768px
+    768px以上がpc_view（便宜上pcといってますが、タブレットも含まれます）
+    767以下がsp_view
+  */
+
+@mixin pc_view
+  @media screen and (min-width: 768px)
+    @content
+
+@mixin sp_view
+  @media screen and (max-width: 767px)
+    @content
+
+
+/*
+  ** line-heightによる上下の余白を無効化する
+  ex) line-heightが1.2の場合
+  .-class {
+    line-height: 1.2
+    @include lineHeightCrop(1.2)
+  }
+  */
+@mixin lineHeightCrop($line-height)
+  &::before
+    display: block
+    width: 0
+    height: 0
+    margin-top: calc((1 - #{$line-height}) * .5em)
+    content: ""
+
+  &::after
+    display: block
+    width: 0
+    height: 0
+    margin-bottom: calc((1 - #{$line-height}) * .5em)
+    content: ""

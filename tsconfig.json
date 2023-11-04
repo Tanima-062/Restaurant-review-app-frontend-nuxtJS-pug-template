@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    // "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    // "allowSyntheticDefaultImports": true,
+    // "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noEmit": true,
+    "baseUrl": "./src",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "skipLibCheck": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules/@types/webpack",
+      "./node_modules/@nuxt/vue-app/types",
+      "./node_modules/@nuxtjs/axios/types",
+      "./src/types"
+    ],
+    "types": ["@types/node", "@nuxt/types", "@nuxtjs/axios", "nuxt-i18n"]
+  },
+  // "include": ["**/*.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

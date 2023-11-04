@@ -1,0 +1,198 @@
+ja: 
+  headline: 国内格安航空券・飛行機・LCCの予約
+  index: ファイル
+  common:
+      currency: ¥
+      adult: 大人
+      child: 子供
+      baby: 乳児
+      people: 名
+      people_per: 名分
+      people_count: 名目
+      hotel: ホテル
+      breakfast: 朝食
+      lunch: 昼食
+      dinner: 夕食
+      flight: フライト
+      departure: 発
+      arrival: 着
+      departure_way: 往路
+      arrival_way: 復路
+      extra_price: 追加料金
+  lang_switch: 
+      to_cancel: キャンセル
+      to_english: Switch to English
+  menu: 
+    listbooking: 
+      - 
+        icon: icon-file-text
+        title: 予約確認
+        link: /
+      - 
+        icon: icon-user-shape
+        title: ログイン
+        link: /
+    listsearch_a: 
+      - 
+        icon: icon-file-text
+        title: 国内航空券
+        link: /
+      - 
+        icon: icon-file-text
+        title: 海外航空券
+        link: /international-flights/
+      - 
+        icon: icon-file-text
+        title: ホテル
+        link: /hotel/
+      - 
+        icon: icon-file-text
+        title: 国内航空券+ホテル
+        link: /dp/
+      - 
+        icon: icon-file-text
+        title: 海外航空券＋ホテル
+        link: /dp/?dp=ia
+      - 
+        icon: icon-file-text
+        title: レンタカー
+        link: /rentacar/
+      - 
+        icon: icon-file-text
+        title: 高速バス
+        link: /bus/
+    listsearch_b: 
+      - 
+        icon: icon-file-text
+        title: フェリー
+        link: /ferry/
+      - 
+        icon: icon-file-text
+        title: 海外WiFiレンタル
+        link: /wifi/
+      - 
+        icon: icon-file-text
+        title: 旅行保険
+        link: /
+      - 
+        icon: icon-file-text
+        title: プレミア
+        link: /
+      - 
+        icon: icon-file-text
+        title: 海外ガイド
+        link: /
+    listsupport: 
+      - 
+        icon: icon-question
+        title: よくある質問
+        link: /
+      - 
+        icon: icon-blocked
+        title: キャンセルについて
+        link: /
+      - 
+        icon: icon-info-button
+        title: ご利用方法
+        link: /
+    title: 
+      - 
+        booking: 予約確認
+        search: 探す
+        support: サポート
+  nav_list: 
+    - 
+      title: 国内航空券
+      new: false
+      link: /
+    - 
+      title: 海外航空券
+      new: false
+      link: /international-flights/
+    - 
+      title: ホテル
+      new: false
+      link: /hotel/
+    - 
+      title: 国内航空券＋ホテル
+      new: true
+      link: /dp/
+    - 
+      title: 海外航空券＋ホテル
+      new: true
+      link: /dp/?dp=ia
+    - 
+      title: レンタカー
+      new: false
+      link: /rentacar/
+    - 
+      title: 高速バス
+      new: true
+      link: /bus/
+    - 
+      title: フェリー
+      new: false
+      link: /ferry/
+    - 
+      title: WiFiレンタル
+      new: false
+      link: /wifi/
+    - 
+      title: 観光ガイド
+      new: false
+      link: /guide/
+    - 
+      arrow: true
+      title: その他
+      new: false
+      link: /
+  sub_nav_list:
+    - 
+      title: 旅行保険
+      link: /insurance/
+    - 
+      title: プレミアム
+      link: /premium/
+  reservation_confirming: 予約確認
+  reservation_list: 
+    - 
+      title: マイページ
+      icon: icon-file-text
+    - 
+      title: ログイン
+      icon: icon-user-shape
+    - 
+      title: サポート
+      icon: icon-question
+  title: 多言語化
+  tourDetailTitle:
+    departure: 出発日
+  tourDetailPrice:
+    min_price: ツアーの最安値  
+    customers: 大人１名
+    total: 総額
+    price: 代金
+  tourDetailSchedule:
+    title: ツアー詳細
+    days: 日目
+    tabs: 
+      - 日程
+      - 内容
+      - ポイント
+  tourDetailBtn:
+    text: このツアーを選ぶ
+  tourDetailInput:
+    text: 日程と参加人数を入力する
+  tourDetailStatement:
+    price: ツアー代金×2名
+    add_price: 部屋追加代金
+    option: 追加オプション
+    total: 総額
+
+en: 
+  index: files
+  lang_switch:
+      to_cancel: Cancel
+      to_english: 日本語に切り替え
+  reservation_confirming: Reservation confirming
+  title: Multilingualization

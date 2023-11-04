@@ -1,0 +1,180 @@
+.mt-
+  &xs
+    margin-top: 4px
+    @include sp_view
+      // margin-top: 8px
+  &s
+    margin-top: 8px
+    @include sp_view
+      // margin-top: 8px
+  &m
+    margin-top: 16px
+    @include sp_view
+      // margin-top: 8px
+  &l
+    margin-top: 24px
+    @include sp_view
+      // margin-top: 8px
+  &xl
+    margin-top: 32px
+    @include sp_view
+      // margin-top: 8px
+  &xxl
+    margin-top: 40px
+    @include sp_view
+      // margin-top: 8px
+  &xxxl
+    margin-top: 56px
+    @include sp_view
+      // margin-top: 8px
+.mb-
+  &xs
+    margin-bottom: 4px
+    @include sp_view
+      // margin-top: 8px
+  &s
+    margin-bottom: 8px
+    @include sp_view
+      // margin-top: 8px
+  &m
+    margin-bottom: 16px
+    @include sp_view
+      // margin-top: 8px
+  &l
+    margin-bottom: 24px
+    @include sp_view
+      // margin-top: 8px
+  &xl
+    margin-bottom: 32px
+    @include sp_view
+      // margin-top: 8px
+  &xxl
+    margin-bottom: 40px
+    @include sp_view
+      // margin-top: 8px
+  &xxxl
+    margin-bottom: 56px
+    @include sp_view
+      // margin-top: 8px
+.mr-
+  &xs
+    margin-right: 4px
+    @include sp_view
+      // margin-top: 8px
+  &s
+    margin-right: 8px
+    @include sp_view
+      // margin-top: 8px
+  &m
+    margin-right: 16px
+    @include sp_view
+      // margin-top: 8px
+  &l
+    margin-right: 24px
+    @include sp_view
+      // margin-top: 8px
+  &xl
+    margin-right: 32px
+    @include sp_view
+      // margin-top: 8px
+  &xxl
+    margin-right: 40px
+    @include sp_view
+      // margin-top: 8px
+.ml-
+  &xs
+    margin-left: 4px
+    @include sp_view
+      // margin-top: 8px
+  &s
+    margin-left: 8px
+    @include sp_view
+      // margin-top: 8px
+  &m
+    margin-left: 16px
+    @include sp_view
+      // margin-top: 8px
+  &l
+    margin-left: 24px
+    @include sp_view
+      // margin-top: 8px
+  &xl
+    margin-left: 32px
+    @include sp_view
+      // margin-top: 8px
+  &xxl
+    margin-left: 40px
+    @include sp_view
+      // margin-top: 8px
+
+.mt-primary-btn
+  margin-top: 96px
+  @include sp_view
+    margin-top: 32px
+
+.col-grid
+  display: grid
+  grid-column-gap: 8px
+  grid-template-columns: repeat(12, 1fr)
+  min-width: $container_min_width_pc
+  max-width: $container_max_width_pc
+  margin: 0 auto
+  @include sp_view
+    grid-template-columns: repeat(4, 1fr)
+    min-width: $container_min_width_sp
+    max-width: $container_max_width_sp
+  &-full
+    grid-column: 1/13
+    @include sp_view
+      grid-column: 1/5
+  &-harf
+    &-l
+      grid-column: 1/7
+      @include sp_view
+        grid-column: 1/3
+    &-r
+      grid-column: 7/13
+      @include sp_view
+        grid-column: 3/5
+  &-page-content
+    grid-column: 2/12
+    @include sp_view
+      grid-column: 1/5
+
+/*
+  ** flexを使ったポジショニング
+  */
+
+.flex-p
+  &-l
+    display: flex
+    justify-content: flex-start
+  &-c
+    display: flex
+    justify-content: center
+  &-r
+    display: flex
+    justify-content: flex-end
+  &-st
+    display: flex
+    justify-content: stretch
+  &-sa
+    display: flex
+    justify-content: space-around
+  &-sb
+    display: flex
+    justify-content: space-between
+  &-se
+    display: flex
+    justify-content: space-evenly
+
+/*
+  ** 最大・最小幅を自由に設定したいときに利用する
+  */
+.free-width
+  min-width: auto
+  max-width: none
+  &-min
+    min-width: auto
+  &-max
+    max-width: none
